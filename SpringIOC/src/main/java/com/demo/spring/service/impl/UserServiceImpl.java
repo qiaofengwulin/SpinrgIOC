@@ -14,10 +14,12 @@ import com.demo.spring.service.UserService;
 @MyService
 public class UserServiceImpl implements UserService {
     @MyAutowired
-    private OrderService orderServiceImpl;
+    private OrderService orderServiceImpl ;
 
     public void add() {
         orderServiceImpl.addOrder();
         System.out.println("UserService执行add方法...........");
     }
+
+
 }

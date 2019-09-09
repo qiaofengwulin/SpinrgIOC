@@ -15,5 +15,10 @@ public class OrderServiceImpl implements OrderService {
     public void addOrder() {
         System.out.println("OrderService执行addOrder方法");
     }
-
+    @Override
+    public String toString() {
+        return "UserServiceImpl{" +
+                "orderServiceImpl=" + 1 +
+                '}';
+    }
 }

@@ -13,8 +13,12 @@ public class TestMain {
 
     public static void main(String[] args) throws Exception {
         MyClassPathXmlApplicationContext myClassPathXmlApplicationContext =
-                new MyClassPathXmlApplicationContext("com.demo.spring.service");
+                new MyClassPathXmlApplicationContext("com.demo.spring");
+//        OrderService orderService = (OrderService) myClassPathXmlApplicationContext.getBean("orderServiceImpl");
+//        orderService.addOrder();
+
         UserService userService = (UserService) myClassPathXmlApplicationContext.getBean("userServiceImpl");
         userService.add();
     }
+
 }

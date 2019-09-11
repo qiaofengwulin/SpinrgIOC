@@ -144,10 +144,13 @@ public class MyClassPathXmlApplicationContext {
         if (beanId == null) {
             throw new Exception("beanId不能为空 ");
         }
-        //创建beanId的实例对象
         /**
-         * 此时创建的对象已经是代理对象了。因为replaceProxyBean()方法已经将原beans里面的对象替换了。造成无法依赖注入的bug待解决
+         * 创建beanId的实例对象
+         *
+         * 此时创建的对象已经是代理对象了。因为replaceProxyBean()方法已经将原beans里面的对象替换了。
          * 这个beanId目标对象不替换成代理对象。就无法实现aop切面。
+         * 替换成代理对象造成无法依赖注入的bug待解决
+         *
          */
         Object o = beans.get(beanId);
         //该对象的属性分布

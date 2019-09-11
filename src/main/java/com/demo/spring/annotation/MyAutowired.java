@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * 自定义注解 从Spring容器获取bean
  *
- * @ProjectName SpringIOC
+ * @ProjectName Spring
  * @Author qiaozhonghuai
  * @Date 2019/8/28
  * @Version 1.0

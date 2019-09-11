@@ -6,7 +6,7 @@ import com.demo.spring.service.OrderService;
 import com.demo.spring.service.UserService;
 
 /**
- * @ProjectName SpringIOC
+ * @ProjectName Spring
  * @Author qiaozhonghuai
  * @Date 2019/8/28
  * @Version 1.0

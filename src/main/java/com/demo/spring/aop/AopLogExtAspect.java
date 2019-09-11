@@ -8,7 +8,7 @@ import com.demo.spring.annotation.MyService;
 /**
  * @ClassName AopLogExtAspect
  * @Description TODO
- * @Author huangqinghai
+ * @Author qiaozhonghuai
  * @Date 2019/9/3 0003 下午 18:19
  * @Version 1.0
  **/

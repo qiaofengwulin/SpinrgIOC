@@ -14,7 +14,7 @@ import com.demo.spring.service.UserService;
 @MyService
 public class UserServiceImpl implements UserService {
     @MyAutowired
-    private OrderService orderServiceImpl ;
+    private OrderService orderServiceImpl = new OrderServiceImpl() ;
 
     public void add() {
         orderServiceImpl.addOrder();

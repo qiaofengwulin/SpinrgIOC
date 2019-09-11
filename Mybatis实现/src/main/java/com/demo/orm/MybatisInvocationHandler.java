@@ -45,11 +45,16 @@ public class MybatisInvocationHandler implements InvocationHandler {
     private Object select(ExtSelect extSelect,Method method, Object[] args) throws SQLException, IllegalAccessException, InstantiationException {
         //获取到注解上面的sql
         String sql = extSelect.value();
+        //获取参数列表
         ConcurrentHashMap<String, Object> paramMap = getParamMap(method, args);
+        //获得sql的参数名
         List<String> strings = SQLUtils.sqlSelectParameter(sql);
         ArrayList<Object> list = new ArrayList<Object>();
+        //遍历sql参数数组
         for (String string : strings) {
+            //用sql参数名获取参数值
             Object o = paramMap.get(string);
+            //将参数存入list
             list.add(o);
         }
         String newSql = SQLUtils.parameQuestion(sql, strings);
